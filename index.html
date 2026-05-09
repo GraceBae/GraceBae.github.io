@@ -46,6 +46,32 @@
       background: linear-gradient(135deg, #f8fafc, #eef2ff);
     }
 
+        .hero-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    
+    .hero-text {
+      flex: 1;
+      min-width: 320px;
+    }
+    
+    .hero-image {
+      flex: 0 0 320px;
+      text-align: center;
+    }
+    
+    .hero-image img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
     .hero h1 {
       font-size: 54px;
       line-height: 1.05;
@@ -174,16 +200,28 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Human-Centered AI for Digital Health and Emotional Well-being</h1>
-    <p>
-      The CARE AI Lab develops configurable, actionable, responsible, and explainable AI systems
-      that combine mobile sensing, affective computing, and human-AI interaction to support health,
-      safety, and well-being.
-    </p>
-    <a class="button" href="#research">Explore Research</a>
-    <a class="button secondary" href="#join">Join the Lab</a>
-  </section>
+<section class="hero">
+  <div class="hero-container">
+
+    <div class="hero-text">
+      <h1>Building Human-Centered AI Systems for Health, Emotion, and Well-being</h1>
+
+      <p>
+        The CARE AI Lab develops emotionally intelligent, explainable, and privacy-preserving AI systems
+        that combine mobile sensing, affective computing, and human-AI interaction to support health,
+        resilience, and digital well-being.
+      </p>
+
+      <a class="button" href="#research">Explore Research</a>
+      <a class="button secondary" href="#join">Join the Lab</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Grace Bae">
+    </div>
+
+  </div>
+</section>
 
   <section id="research">
     <h2>Research Areas</h2>
