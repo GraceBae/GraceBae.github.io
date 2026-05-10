@@ -41,17 +41,37 @@
       color: #2563eb;
     }
 
-    .hero {
+    /* .hero {
       padding: 90px 8% 70px;
       background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    } */
+    .hero {
+      padding: 110px 8% 95px;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(248,250,252,0.98) 0%,
+          rgba(248,250,252,0.92) 42%,
+          rgba(248,250,252,0.55) 68%,
+          rgba(248,250,252,0.25) 100%
+        ),
+        url("images/hero-ai.jpg");
+    
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
     }
-
-    .hero-container {
+    
+    /* .hero-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 60px;
       flex-wrap: wrap;
+    } */
+
+    .hero-container {
+     max-width: 760px;
     }
     
     .hero-text {
@@ -242,7 +262,7 @@
     </nav>
   </header>
 
-<section class="hero">
+<!-- <section class="hero">
   <div class="hero-container">
 
     <div class="hero-text">
@@ -269,13 +289,33 @@
       </a>
     </div>
 
-    <div class="hero-image">
+    <!-- <div class="hero-image">
        <img src="images/hero-ai.jpg" alt="Human-centered AI for digital health">
-    </div>
+    </div> -->
 
+  </div>
+</section> -->
+
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Human-Centered AI for Health, Emotion, and Well-Being</h1>
+
+      <p>
+        The CARE AI Lab develops deployable, emotionally intelligent, and explainable AI systems
+        that combine mobile sensing, generative AI, and affective computing for digital health
+        and behavioral well-being.
+      </p>
+
+      <a class="button" href="#publications">Publications</a>
+      <a class="button secondary" href="#projects">Open-Source Systems</a>
+      <a class="button secondary" href="news.html">News</a>
+    </div>
   </div>
 </section>
 
+
+  
 <section id="vision" style="background:white;">
 
   <h2>Research Vision</h2>
